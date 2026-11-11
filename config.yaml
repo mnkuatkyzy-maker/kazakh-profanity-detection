@@ -1,0 +1,32 @@
+# All settings of the project live here. Change a value, re-run the scripts.
+seed: 42                      # one fixed random seed for sampling, splitting and training
+
+data:
+  raw_dir: data/raw/kazsandra_zip          # where download_data.py puts KazSAnDRA
+  raw_files: [06_sc_train_ib.csv, 09_sc_valid.csv, 10_sc_test.csv]
+  manual_labels: data/labels/manual_labels.csv
+  synthetic: data/synthetic/synthetic.csv
+  processed: data/processed/dataset.csv   # final labeled dataset with a "split" column
+  # How many clean ("none") comments to sample as negatives, per domain.
+  # Half of the app-store negatives are 1-2 star reviews: negative != profane.
+  negatives_per_domain: {appstore: 4000, market: 1500, mapping: 300, bookstore: 200}
+  low_rating_share_appstore: 0.5
+  split: {train: 0.70, val: 0.15, test: 0.15}
+  near_duplicate_cosine: 0.80              # comments this similar go to the same split
+
+preprocessing:
+  max_chars: 1000              # long comments are cut to the first 1000 characters
+
+model:
+  analyzer: char_wb            # character n-grams inside word boundaries
+  # Candidate settings; train.py tries every combination and keeps the best on validation.
+  ngram_ranges: [[1, 4], [2, 5]]
+  C_values: [0.3, 1.0, 3.0, 10.0, 30.0, 100.0]   # inverse regularisation strength of logistic regression
+  min_df: 2                    # an n-gram must appear in >= 2 training comments
+  max_features: 200000
+  class_weight: balanced       # profanity is the minority class
+
+paths:
+  model: models/profanity_model.joblib
+  model_info: models/model_info.json
+  results_dir: results

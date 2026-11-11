@@ -1,0 +1,68 @@
+{
+  "raw_reviews": 175158,
+  "after_exact_dedup": 167750,
+  "rule_tags_in_full_corpus": {
+    "none": 163931,
+    "strict": 2179,
+    "insult": 1226,
+    "review": 414
+  },
+  "dropped_for_privacy": 14,
+  "final_dataset_size": 9865,
+  "synthetic_examples": 60,
+  "near_duplicate_groups_with_2plus": 42,
+  "split_sizes": {
+    "train": 6925,
+    "val": 1471,
+    "test": 1469
+  },
+  "class_distribution": {
+    "train": {
+      "0": 5239,
+      "1": 1686
+    },
+    "val": {
+      "0": 1103,
+      "1": 368
+    },
+    "test": {
+      "0": 1110,
+      "1": 359
+    }
+  },
+  "class_distribution_total": {
+    "0": 7452,
+    "1": 2413
+  },
+  "label_source": {
+    "rule:none": 5093,
+    "rule:strict": 1850,
+    "manual": 1826,
+    "rule:insult": 1036,
+    "synthetic": 60
+  },
+  "domain_by_split": {
+    "test": {
+      "appstore": 1148,
+      "bookstore": 34,
+      "mapping": 50,
+      "market": 237,
+      "synthetic": 0
+    },
+    "train": {
+      "appstore": 5416,
+      "bookstore": 160,
+      "mapping": 233,
+      "market": 1056,
+      "synthetic": 60
+    },
+    "val": {
+      "appstore": 1148,
+      "bookstore": 34,
+      "mapping": 58,
+      "market": 231,
+      "synthetic": 0
+    }
+  },
+  "seed": 42
+}

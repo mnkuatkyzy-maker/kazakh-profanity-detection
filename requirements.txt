@@ -1,0 +1,7 @@
+# Tested with Python 3.13.9 on macOS (any Python 3.10-3.13 should work).
+numpy==2.2.6
+pandas==2.3.3
+scikit-learn==1.7.2
+joblib==1.5.2
+matplotlib==3.10.6
+PyYAML==6.0.3

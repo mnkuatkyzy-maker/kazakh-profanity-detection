@@ -1,0 +1,28 @@
+{
+  "model": "TF-IDF character n-grams (char_wb) + Logistic Regression",
+  "ngram_range": [
+    1,
+    4
+  ],
+  "C": 100.0,
+  "threshold": 0.34542609411853514,
+  "threshold_rule": "maximise F1 of class 1 on the validation split",
+  "validation": {
+    "f1": 0.9631650750341064,
+    "precision": 0.9671232876712329,
+    "recall": 0.9592391304347826,
+    "average_precision": 0.9915692836029079
+  },
+  "n_features": 27198,
+  "train_size": 6925,
+  "val_size": 1471,
+  "seed": 42,
+  "max_chars": 1000,
+  "versions": {
+    "python": "3.13.9",
+    "scikit-learn": "1.7.2",
+    "numpy": "2.2.6",
+    "pandas": "2.3.3",
+    "joblib": "1.5.2"
+  }
+}

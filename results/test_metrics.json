@@ -1,0 +1,39 @@
+{
+  "n_test": 1469,
+  "n_test_class_1": 359,
+  "n_test_class_0": 1110,
+  "threshold": 0.34542609411853514,
+  "precision_class_1": 0.9637883008356546,
+  "recall_class_1": 0.9637883008356546,
+  "f1_class_1": 0.9637883008356546,
+  "accuracy": 0.9823008849557522,
+  "confusion_matrix": {
+    "true_negative": 1097,
+    "false_positive": 13,
+    "false_negative": 13,
+    "true_positive": 346
+  },
+  "f1_class_1_at_default_0.5": 0.9645390070921985,
+  "per_domain": {
+    "appstore": {
+      "n": 1148,
+      "n_class_1": 357,
+      "accuracy": 0.9773519163763066
+    },
+    "bookstore": {
+      "n": 34,
+      "n_class_1": 1,
+      "accuracy": 1.0
+    },
+    "mapping": {
+      "n": 50,
+      "n_class_1": 1,
+      "accuracy": 1.0
+    },
+    "market": {
+      "n": 237,
+      "n_class_1": 0,
+      "accuracy": 1.0
+    }
+  }
+}

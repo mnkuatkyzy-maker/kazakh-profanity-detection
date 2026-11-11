@@ -1,0 +1,9 @@
+# raw KazSAnDRA files are downloaded by src/download_data.py (not stored in git)
+data/raw/
+# temporary file written by prepare_data.py only when manual labels are missing
+data/labels/needs_review.csv
+__pycache__/
+*.pyc
+.DS_Store
+.ipynb_checkpoints/
+.venv/

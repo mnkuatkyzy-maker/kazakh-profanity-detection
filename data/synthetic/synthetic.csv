@@ -1,0 +1,61 @@
+id,text,syn_label,domain,note
+syn_001,Тауар бір аптада сынып қалды қотақбас сатушы,1,synthetic,obscene insult in product review
+syn_002,Курьер 3 күн кешікті бля енді керек емес,1,synthetic,russian mat inside kazakh review
+syn_003,Телефонның экраны жарылып келді пиздец сапа,1,synthetic,russian mat inside kazakh review
+syn_004,сатушы шешеңнің амы ақшамды қайтар,1,synthetic,kazakh obscene phrase
+syn_005,Мынадай шаңсорғышты сатқандардың аузын сігейін,1,synthetic,kazakh obscene phrase
+syn_006,Кроссовка бір айда жыртылды қ*тақбастар,1,synthetic,masked obscene word
+syn_007,с**а наушник бірінші күні істемей қалды,1,synthetic,masked russian mat
+syn_008,б***ть тағы да қате размер жіберді,1,synthetic,masked russian mat
+syn_009,qotaqbas magazin aqshany qaitarmaidy,1,synthetic,latin script obscene
+syn_010,sigeyin osyndai sapany buyrtpa 2 apta keldi,1,synthetic,latin script obscene
+syn_011,Заказ жоғалып кетті зайбал бұл дүкен,1,synthetic,russian mat inside kazakh review
+syn_012,Шай қайнатқыш ағып тұр нахуй сатасыңдар мұны,1,synthetic,russian mat inside kazakh review
+syn_013,Көйлектің түсі мүлде басқа далбаеб сатушы,1,synthetic,russian mat inside kazakh review
+syn_014,ҚОТАҚ СИЯҚТЫ САПА ақшаңызды желге шашпаңыз,1,synthetic,upper case obscene
+syn_015,Котакккк тауар екен 2 күнде бұзылды,1,synthetic,repeated letters
+syn_016,сатушы жалап екен жауап бермейді,1,synthetic,kazakh obscene insult
+syn_017,Кітап бетінің жартысы жоқ ебаный стыд,1,synthetic,russian mat inside kazakh review
+syn_018,Доставка сука 10 күн жүрді,1,synthetic,russian mat inside kazakh review
+syn_019,п*здец сапасы нашар қаптамасы жыртық,1,synthetic,masked russian mat
+syn_020,Бұл тоңазытқышты сатқан қотақтарға ұят,1,synthetic,kazakh obscene plural
+syn_021,ам сияқты дүкен ешкімге ұсынбаймын,1,synthetic,kazakh obscene noun
+syn_022,Қыздың шашына арналған фен күйіп кетті шешен амы,1,synthetic,kazakh obscene phrase (misspelled шешең)
+syn_023,сапасы б**** ақшамды қайтарыңдар,1,synthetic,masked word
+syn_024,Тамақ суып келді Котак Бас курьерлер,1,synthetic,split obscene compound
+syn_025,Ноутбук қызып кетеді ипать не деген,1,synthetic,phonetic spelling of russian mat
+syn_026,сигин осы дүкенді тағы алдады,1,synthetic,kazakh obscene verb
+syn_027,Қалам жазбайды екен хуйня,1,synthetic,russian mat inside kazakh review
+syn_028,Kotak siyakty telefon ekran zhok,1,synthetic,latin script obscene
+syn_029,Ұнамады қ0тақбас сатушы,1,synthetic,digit instead of letter
+syn_030,Сағат 2 күнде тоқтады бл* қайда шағымданам,1,synthetic,masked russian mat
+syn_031,Тауар нашар сапасы төмен ақшама өкінемін,0,synthetic,negative review without profanity
+syn_032,Курьер кешікті және дөрекі сөйледі ұнамады,0,synthetic,negative review without profanity
+syn_033,Мүлде жарамсыз тауар ешкімге ұсынбаймын,0,synthetic,negative review without profanity
+syn_034,Сатушы ақымақ па әлде алаяқ па түсінбедім,0,synthetic,insult but not obscene
+syn_035,Мал сияқты қаптаған жоқ бәрі сынған,0,synthetic,insult but not obscene
+syn_036,Скидкамен алдым бағасы жақсы,0,synthetic,lookalike word скидка
+syn_037,Аман-есен жетті рахмет сатушыға,0,synthetic,lookalike word аман
+syn_038,Басқа амал жоқ болған соң осыны алдым жаман емес,0,synthetic,lookalike word амал
+syn_039,Чемоданды көтеру оңай жеңіл екен,0,synthetic,lookalike word көтеру
+syn_040,Шешем үшін алдым өте риза болды,0,synthetic,lookalike word шешем (my mother)
+syn_041,Сиқырлы кітап балаларға қатты ұнады,0,synthetic,lookalike word сиқырлы
+syn_042,Ойынға жаңа скин қосыңыздаршы,0,synthetic,lookalike word скин (game skin)
+syn_043,Hyundai көлігіне арналған жабын сай келді,0,synthetic,lookalike word Hyundai
+syn_044,Котенокқа арналған тамақ мысығым жеді,0,synthetic,lookalike word котенок
+syn_045,Блендер қуатты жеміс тез ұнтақталады,0,synthetic,lookalike word блендер
+syn_046,Қотан ауласына қойылған шам жарқырайды,0,synthetic,lookalike word қотан
+syn_047,Сатушы оңбаған екен ақшаны қайтармады,0,synthetic,insult but not obscene
+syn_048,Мына дүкендегілер есек сияқты түсінбейді,0,synthetic,insult but not obscene
+syn_049,Блин тағы да қате тауар келді,0,synthetic,euphemism блин is not profanity
+syn_050,Сапасы ужас енді алмаймын,0,synthetic,russian word in kazakh review not profane
+syn_051,Өте нашар қызмет 1 жұлдыз,0,synthetic,negative review without profanity
+syn_052,Шешендер туралы кітап қызықты екен,0,synthetic,lookalike word шешен (Chechen)
+syn_053,Сигнал әлсіз роутер нашар,0,synthetic,lookalike word сигнал
+syn_054,Amal zhok zhaksy tauar,0,synthetic,latin script clean
+syn_055,Zhaman tauar aqshama okinemin,0,synthetic,latin script negative clean
+syn_056,Кеңсе үшін ыңғайлы үстел ***** бес жұлдыз,0,synthetic,asterisks used as stars not masking
+syn_057,Сату орны жақсы бірақ кезек ұзақ,0,synthetic,neutral review
+syn_058,Тауарды ашқанда иісі жаман шықты,0,synthetic,negative review without profanity
+syn_059,Жалақыма алған телефоным керемет,0,synthetic,lookalike word жалақы
+syn_060,Шекарадан сырғанақ алдым балалар риза,0,synthetic,neutral review
