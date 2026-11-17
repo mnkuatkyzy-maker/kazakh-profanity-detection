@@ -77,7 +77,7 @@ docs/DEFENSE_RU.md             defense preparation guide (in Russian)
 ## 3. Setup and quick start (no retraining needed)
 
 ```bash
-git clone <this-repo-url>
+git clone https://github.com/mnkuatkyzy-maker/kazakh-profanity-detection.git
 cd kazakh-profanity-detection
 python3 -m venv .venv && source .venv/bin/activate      # Windows: .venv\Scripts\activate
 pip install -r requirements.txt
