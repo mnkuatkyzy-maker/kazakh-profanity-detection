@@ -7,14 +7,14 @@
     "insult": 1226,
     "review": 414
   },
-  "dropped_for_privacy": 14,
-  "final_dataset_size": 9865,
+  "dropped_for_privacy": 15,
+  "final_dataset_size": 9864,
   "synthetic_examples": 60,
   "near_duplicate_groups_with_2plus": 42,
   "split_sizes": {
     "train": 6925,
     "val": 1471,
-    "test": 1469
+    "test": 1468
   },
   "class_distribution": {
     "train": {
@@ -26,24 +26,24 @@
       "1": 368
     },
     "test": {
-      "0": 1110,
+      "0": 1109,
       "1": 359
     }
   },
   "class_distribution_total": {
-    "0": 7452,
+    "0": 7451,
     "1": 2413
   },
   "label_source": {
     "rule:none": 5093,
     "rule:strict": 1850,
-    "manual": 1826,
+    "manual": 1825,
     "rule:insult": 1036,
     "synthetic": 60
   },
   "domain_by_split": {
     "test": {
-      "appstore": 1148,
+      "appstore": 1147,
       "bookstore": 34,
       "mapping": 50,
       "market": 237,

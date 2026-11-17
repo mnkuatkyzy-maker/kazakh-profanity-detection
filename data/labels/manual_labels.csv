@@ -907,7 +907,6 @@ pla017088pla,1,test check: rule label confirmed
 pla017092pla,0,test check: rule label confirmed
 pla017116pla,0,test check: rule label confirmed
 pla017208pla,0,test check: rule label confirmed
-pla017432pla,0,test check: rule label confirmed
 pla017525pla,0,test check: rule label confirmed
 pla017559pla,0,test check: rule label confirmed
 pla017719pla,0,test check: rule label confirmed
@@ -1839,3 +1838,4 @@ pla134533pla,0,test check: rule label confirmed
 pla134619pla,1,test check: rule label confirmed
 pla134820pla,0,test check: rule label confirmed
 pla134863pla,0,test check: rule label confirmed
+pla017432pla,drop,contains a personal account name (*.kz handle) -> removed for privacy

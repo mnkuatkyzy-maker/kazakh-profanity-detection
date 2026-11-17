@@ -18,7 +18,7 @@ $ python src/predict.py "Телефон бір аптада бұзылды, қо
 ```
 
 The model is **TF-IDF over character n-grams + logistic regression**, trained by me on
-9,865 labeled Kazakh reviews built from the public KazSAnDRA dataset.
+9,864 labeled Kazakh reviews built from the public KazSAnDRA dataset.
 
 ---
 
@@ -26,7 +26,7 @@ The model is **TF-IDF over character n-grams + logistic regression**, trained by
 
 | metric (class 1 = profanity) | value |
 |---|---|
-| test examples | **1,469** (359 profane, 1,110 clean) |
+| test examples | **1,468** (359 profane, 1,109 clean) |
 | precision | **0.964** |
 | recall | **0.964** |
 | F1 | **0.964** |
@@ -37,7 +37,7 @@ The model is **TF-IDF over character n-grams + logistic regression**, trained by
 
 | | predicted 0 | predicted 1 |
 |---|---|---|
-| **true 0 (clean)** | 1097 (TN) | 13 (FP) |
+| **true 0 (clean)** | 1096 (TN) | 13 (FP) |
 | **true 1 (profanity)** | 13 (FN) | 346 (TP) |
 
 All numbers come from `results/test_metrics.json`, produced by `python src/evaluate.py`.
@@ -151,7 +151,7 @@ KazSAnDRA has no profanity labels, so I built them in three stages
    masked words, …), `insult` (rude but not obscene: *мал, ақымақ, оңбаған, лох, шошқа, есек, блин*)
    or `none`.
 2. **Manual review** of every `review`-tagged comment (414) – each decision and its reason is saved.
-3. **Manual check of the whole test split** (1,469 comments): the rule label was confirmed or
+3. **Manual check of the whole test split** (1,469 comments; one was later removed for privacy): the rule label was confirmed or
    corrected. 17 rule labels were wrong (1.2 %): 6 false alarms of the rules (e.g. *«ұсын амын»* =
    «ұсынамын») and 11 misses (abbreviations *зб, длб*, `#`-masking *«сі#ейын»*, spelling
    *«далбоиоп»*). The same rule gaps were then searched for in train/val and fixed (13 comments).
@@ -177,7 +177,7 @@ The rules are only a labeling tool: **the classifier never sees them**, it learn
 | asterisks used as decoration (`*рахмет*`) or as stars (`*****`) | **0** |
 | sexual words that are not obscene (*секс, порно*) | **0** |
 | ambiguous case with a plausible obscene reading | **1**, decision noted in `manual_labels.csv` |
-| comment containing a person's full name or address | **removed** (14 comments) |
+| comment containing a person's full name or address | **removed** (15 comments) |
 
 The language of the comment does not change the rule: comments are Kazakh, Russian-Kazakh mixed,
 or Kazakh in Latin script; pure Kyrgyz or pure Russian texts are rare in KazSAnDRA and were kept.
@@ -210,7 +210,7 @@ reviews). They are used **only in training**; validation and test contain only r
 ### 5.6 Building the dataset (`src/prepare_data.py`)
 
 1. Remove personal data with regexes: links → `<url>`, e-mails → `<email>`, phone numbers → `<phone>`,
-   `@mentions` → `<user>`. KazSAnDRA has no author names; 14 comments that mention a person's full name
+   `@mentions` → `<user>`. KazSAnDRA has no author names; 15 comments that mention a person's full name or a personal account
    were removed by hand.
 2. **Exact duplicates removed** (key = letters only, lower-case, repeated letters collapsed):
    175,158 → 167,750.
@@ -228,10 +228,10 @@ reviews). They are used **only in training**; validation and test contain only r
 |---|---|---|---|---|
 | train | 6,925 (incl. 60 synthetic) | 5,239 | 1,686 | 24.3 % |
 | validation | 1,471 | 1,103 | 368 | 25.0 % |
-| test | 1,469 | 1,110 | 359 | 24.4 % |
-| **total** | **9,865** | **7,452** | **2,413** | 24.5 % |
+| test | 1,468 | 1,109 | 359 | 24.5 % |
+| **total** | **9,864** | **7,451** | **2,413** | 24.5 % |
 
-Label sources: rules `strict` 1,850 · rules `none` 5,093 · rules `insult` 1,036 · manual 1,826 ·
+Label sources: rules `strict` 1,850 · rules `none` 5,093 · rules `insult` 1,036 · manual 1,825 ·
 synthetic 60. Random seed: **42**.
 Note: 24.5 % profanity is much more than in real life (~1.5 % of all KazSAnDRA reviews hit the
 profanity rules) because all candidate comments were kept on purpose.
@@ -300,7 +300,7 @@ See section 1. The test split was used **once**, after all settings and the thre
 With the default threshold 0.5 the test F1 would be 0.965 (reported only for comparison; it was not used
 for any choice).
 
-Per domain (`results/test_metrics.json`): app store accuracy 0.977 (357 profane of 1,148);
+Per domain (`results/test_metrics.json`): app store accuracy 0.977 (357 profane of 1,147);
 market 1.000, mapping 1.000, bookstore 1.000 – but these three contain only 0, 1 and 1 profane test
 comments, so **recall on real product-review profanity could not be measured** (see Limitations).
 
