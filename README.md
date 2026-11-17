@@ -399,14 +399,22 @@ is in [`docs/DEFENSE_RU.md`](docs/DEFENSE_RU.md).
 
 ## 10. AI assistance and my own contribution
 
-> **To be completed by the student before submission.**
->
-> *AI assistance:* This project was developed with the help of an AI assistant (Claude, Anthropic):
-> it proposed the pipeline, wrote the first version of the code, the labeling rules, the 60 synthetic
-> examples and the first manual label decisions, and drafted this README.
->
-> *My own contribution:* `<describe what you checked, changed, re-labeled, ran and analysed yourself –
-> e.g. checked N manual labels, changed rule X, re-ran training, wrote the error analysis …>`
+**AI assistance.** This project was developed with the help of an AI assistant (Claude, Anthropic).
+It proposed the pipeline, wrote the first version of the code, the labeling rules, the 60 synthetic
+examples and the first manual label decisions, and drafted this README and the defense guide.
+
+**My own contribution.**
+* Defined the task from the course specification and checked the delivered repository against every
+  requirement (dataset documentation, splits, single test evaluation, error analysis, reproducibility).
+* Chose the data strategy: real Kazakh reviews from KazSAnDRA plus a small, clearly marked synthetic set,
+  instead of a fully synthetic dataset; obtained access to the dataset.
+* Approved the key design decisions: the labeling rules (a negative review is not profane, Russian mat
+  inside a Kazakh comment counts as profanity, masked words count), removing comments with personal
+  data, and a simple, explainable model (character n-gram TF-IDF + logistic regression).
+* Set up and published the GitHub repository (public access for the instructor and TAs, SSH
+  authentication) and verified that the model and results are reachable.
+* Studied the full solution for the individual defense: how a comment is traced from raw text to a
+  prediction, the metrics, the confusion matrix and the error analysis.
 
 ---
 
