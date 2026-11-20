@@ -1,7 +1,7 @@
 # Kazakh Profanity Detection
 
 KBTU · DSSC5113 · Bonus project (Fall 2026, instructor Aidyn Abirov)
-Student: **`<FULL NAME>`**, ID **`<STUDENT ID>`**
+Student: **Nazym Mailaubayeva**, ID **25MD0219**
 
 A binary text classifier for **one Kazakh product review or comment**:
 
